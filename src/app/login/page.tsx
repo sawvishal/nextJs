@@ -5,9 +5,10 @@ import { useRouter } from "next/navigation";
 import axios, { Axios } from "axios";
 // import { useEffect } from "react"; // Removed duplicate import
 import toast from "react-hot-toast";
-import router from "next/router";
+// import router from "next/router";
 
 export default function SignupPage() {
+  const router = useRouter();
   const [user, setUser] = React.useState({
     email: "",
     password: "",
